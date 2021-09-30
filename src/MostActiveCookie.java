@@ -16,7 +16,7 @@ public class MostActiveCookie {
             while ((row = csvReader.readLine()) != null)
             {
                 String[] data = row.split(",");
-                this.cookies.add(data[0].replace("\"", "") + " " + data[1].replace("\"", "")); // Remove commas added by CSV file
+                this.cookies.add(data[0].replace("\"", "") + " " + data[1].replace("\"", "")); // Remove quotes added by CSV file
             }
             csvReader.close();
         }
